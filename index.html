@@ -13,28 +13,28 @@
                 <header class="d-flex justify-content-between">
                     <div class="city w-30">
                         <select id="cites" class="form-select" aria-label="Default select example">
-                            <option value="Asia/Riyadh">السعودية - الرياض</option>
-                            <option value="Asia/Dubai">الإمارات - أبوظبي</option>
-                            <option value="Asia/Kuwait">الكويت - الكويت</option>
-                            <option value="Asia/Bahrain">البحرين - المنامة</option>
-                            <option value="Asia/Qatar">قطر - الدوحة</option>
-                            <option value="Asia/Muscat">عمان - مسقط</option>
-                            <option value="Asia/Baghdad">العراق - بغداد</option>
-                            <option value="Asia/Amman">الأردن - عمّان</option>
-                            <option value="Asia/Damascus">سوريا - دمشق</option>
-                            <option value="Asia/Beirut">لبنان - بيروت</option>
-                            <option value="Asia/Hebron">فلسطين - رام الله</option>
-                            <option value="Africa/Cairo">مصر - القاهرة</option>
-                            <option value="Africa/Tripoli">ليبيا - طرابلس</option>
-                            <option value="Africa/Tunis">تونس - تونس</option>
-                            <option value="Africa/Algiers">الجزائر - الجزائر</option>
-                            <option value="Africa/Casablanca">المغرب - الرباط</option>
-                            <option value="Africa/Nouakchott">موريتانيا - نواكشوط</option>
-                            <option value="Africa/Khartoum">السودان - الخرطوم</option>
-                            <option value="Africa/Mogadishu">الصومال - مقديشو</option>
-                            <option value="Africa/Djibouti">جيبوتي - جيبوتي</option>
-                            <option value="Indian/Comoro">جزر القمر - موروني</option>
-                            <option value="Asia/Aden">اليمن - صنعاء</option>
+                            <option value="Asia/Riyadh/ SA">السعودية - الرياض</option>
+                            <option value="Asia/Dubai/ AE">الإمارات - أبوظبي</option>
+                            <option value="Asia/Kuwait/ KW">الكويت - الكويت</option>
+                            <option value="Asia/Bahrain/ BH">البحرين - المنامة</option>
+                            <option value="Asia/Qatar/ QA">قطر - الدوحة</option>
+                            <option value="Asia/Muscat/ OM">عُمان - مسقط</option>
+                            <option value="Asia/Baghdad/ IQ">العراق - بغداد</option>
+                            <option value="Asia/Amman/ JO">الأردن - عمّان</option>
+                            <option value="Asia/Damascus/ SY">سوريا - دمشق</option>
+                            <option value="Asia/Beirut/ LB">لبنان - بيروت</option>
+                            <option value="Asia/Hebron/ PS">فلسطين - رام الله</option>
+                            <option value="Africa/Cairo/ EG">مصر - القاهرة</option>
+                            <option value="Africa/Tripoli/ LY">ليبيا - طرابلس</option>
+                            <option value="Africa/Tunis/ TN">تونس - تونس</option>
+                            <option value="Africa/Algiers/ DZ">الجزائر - الجزائر</option>
+                            <option value="Africa/Casablanca/ MA">المغرب - الرباط</option>
+                            <option value="Africa/Nouakchott/ MR">موريتانيا - نواكشوط</option>
+                            <option value="Africa/Khartoum/ SD">السودان - الخرطوم</option>
+                            <option value="Africa/Mogadishu/ SO">الصومال - مقديشو</option>
+                            <option value="Africa/Djibouti/ DJ">جيبوتي - جيبوتي</option>
+                            <option value="Indian/Comoro/ KM">جزر القمر - موروني</option>
+                            <option value="Asia/Aden/ YE">اليمن - صنعاء</option>
                         </select>
                     </div>
                     <div class="date w-25">
@@ -42,52 +42,12 @@
                     </div>
                 </header>
                 <div class="dateInfo bg-danger-subtle mt-2 border rounded border-danger">
-                    <div class="text-center dateInfoData">
-                        <h3>
-                            <span>12</span>
-                            <span>رجب</span>
-                            <span>1446</span>
-                        </h3>
-                        <div class="text-dark-emphasis">30-5-2025</div>
-                    </div>
+                    <div class="text-center" id="dateInfoData"></div>
                 </div>
                 <div class="prayertime mt-2">
-                    <table id="table" class="table table-hover border rounded text-center">
-                        <thead class="table-dark">
-                            <tr>
-                                <th scope="col">الصلاة</th>
-                                <th scope="col">الوقت</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">الفجر</th>
-                                <td>06:22</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">الشروق</th>
-                                <td>06:22</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">الظهر</th>
-                                <td>06:22</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">العصر</th>
-                                <td>06:22</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">المغرب</th>
-                                <td>06:22</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">العشاء</th>
-                                <td>06:22</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <table id="table" class="table table-hover border rounded text-center"></table>
                 </div>
-                <div class="note badge text-bg-danger text-wrap p-2">التوقيت حسب تقويم أم القرى</div>
+                <div class="note badge text-bg-danger text-wrap p-2" id="note"></div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
