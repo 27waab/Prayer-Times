@@ -19,17 +19,17 @@ function showData() {
             const data = response.data.data;
 
             sectionOfDate.innerHTML = `
-            <h3>
-                <span>${data.date.hijri.weekday.ar}</span>
+            <div class="top">${data.date.hijri.weekday.ar}</div>
+            <p>
                 <span>${data.date.hijri.day}</span>
                 <span>${data.date.hijri.month.ar}</span>
                 <span>${data.date.hijri.year}</span>
-            </h3>
-            <div class="text-dark-emphasis">${date}</div>
+            </p>
+            <div class="bottom">الهجري</div>
             `;
 
             table.innerHTML = `
-                <thead class="table-dark">
+                <thead>
                     <tr>
                         <th scope="col">الصلاة</th>
                         <th scope="col">الوقت</th>
@@ -62,7 +62,7 @@ function showData() {
                     </tr>
                 </tbody>
             `;
-            document.getElementById("note").innerHTML = data.meta.method.name;
+            document.querySelector(".note").innerHTML = data.meta.method.name;
         })
         .catch(function (error) {
             alert(`API Requst Erorr: ${error}`);
