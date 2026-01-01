@@ -111,23 +111,23 @@ header {
 #dateInfoData p {
     width: fit-content;
     padding: 2px 15px;
-    border-radius: 6px;
+    border-radius: 999999px;
     color: #fff;
     background-color: #111;
-    font-size: 22px;
+    font-size: 18px;
     box-shadow: 0 0px 15px #0000007d;
     z-index: 1000;
 }
 #dateInfoData div {
     color: #c5c5c5;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bold;
 }
 #dateInfoData .top {
-    margin-bottom: -8px;
+    margin-bottom: -6px;
 }
 #dateInfoData .bottom {
-    margin-top: -20px;
+    margin-top: -15px;
 }
 .prayertime {
     margin-top: 20px;
@@ -185,6 +185,3 @@ header {
     border-radius: 99999px;
     font-weight: bold;
 }
-
-
-
