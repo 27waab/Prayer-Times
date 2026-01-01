@@ -106,7 +106,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 0 0px 15px #6565657d;
+    box-shadow: 0 0px 15px #0000007d;
 }
 #dateInfoData p {
     width: fit-content;
@@ -185,4 +185,5 @@ header {
     border-radius: 99999px;
     font-weight: bold;
 }
+
 
